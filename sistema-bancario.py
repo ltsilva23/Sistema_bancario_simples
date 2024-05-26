@@ -112,8 +112,11 @@ while True:
             print(f"\nSeu saldo atual é de R$ {saldo_inicial:.2f}\n")
         
     elif opcao == 4:
-        print("\nExtrato:\n")
-        print("Depósitos:\t\t\t\tSaques:")
+        if not extrato:
+            print("\nNão há movimentações no extrato.\n")
+        else:
+            print("\nExtrato:\n")
+            print("Depósitos:\t\t\t\tSaques:")
     
         depositos = [f"+ R$ {valor:.2f}" for tipo, valor in extrato if tipo == 'depósito']
         saques = [f"- R$ {valor:.2f}" for tipo, valor in extrato if tipo == 'saque']
