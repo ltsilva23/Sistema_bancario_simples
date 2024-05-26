@@ -18,6 +18,7 @@ sacar_outro = limite_saques
 while True:
     opcao = int(input(menu + "Informe a opção desejada: "))
     if opcao == 0:
+            print("\nObrigado por usar o sistema bancário! Até logo.\n")
         break
 
     if opcao == 1:
