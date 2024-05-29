@@ -74,5 +74,3 @@ Sinta-se à vontade para contribuir com melhorias ou sugestões para o código! 
 5. Abra um Pull Request.
 
 ---
-
-### Arquivos do Projeto
